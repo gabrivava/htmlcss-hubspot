@@ -1,0 +1,42 @@
+/* common CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* debug */
+#site_header {
+    height: 600px;
+    background-color: aqua;
+}
+/* Utility CSS */
+
+
+/********************
+******* Header ******
+********************/
+.top_nav {
+    height: 70px;
+    background-color: blue;
+}
+
+
+
+/********************
+******* Main ******
+********************/
+
+
+
+
+/********************
+******* Footer ******
+********************/

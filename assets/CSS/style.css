@@ -22,6 +22,9 @@ body {
     width: 75%;
     margin: auto;
 }
+#bigevee {
+    font-weight: 800;
+}
 /********************
 ******* Header ******
 ********************/
@@ -42,6 +45,15 @@ body {
     filter: brightness(0.3);
     height: 16px;
 }
+/* left_nav CSS */
+.left_nav .barra {
+    height: 20px;
+    width: 1px;
+    background-color: #32495B;
+    display: inline-block;
+}
+
+/* right_nav CSS */
 
 
 

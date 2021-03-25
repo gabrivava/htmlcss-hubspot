@@ -14,7 +14,7 @@ body {
 }
 /* debug */
 .dbg header {
-    height: 1100px;
+    height: 950px;
 }
 .dbg main {
     height: 600px;
@@ -127,19 +127,25 @@ body {
 .hero_text p {
     width: 50%;
     line-height: 2rem;
-    padding: 3rem 0;
+    padding: 4rem 0;
     
 }
 .hero_text a {
-    padding: 20px;
+    padding: 25px 40px;
     border-radius: 5px;
     background-color: #FE775A;
     color: white;
+    text-decoration: none;
 }
 /********************
 ******* Main ******
 ********************/
-
+.divisore {
+    height: 140px;
+    background-color: #AFEBE4;
+    border-top: 3px solid #33475B;
+    border-bottom: 3px solid #33475B;
+}
 
 
 

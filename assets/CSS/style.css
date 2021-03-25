@@ -14,8 +14,7 @@ body {
 }
 /* debug */
 .dbg header {
-    height: 120px;
-    background-color: rgb(155, 224, 224);
+    height: 140px;
 }
 .dbg main {
     height: 600px;
@@ -37,10 +36,10 @@ body {
 /* top_nav CSS */
 .top_nav {
     background-color: #F4F9FD;
+    border-bottom: 2px solid #94A2AD;
 }
 .nav {
-    height: 60px;
-    line-height: 60px;
+    line-height: 70px;
     vertical-align: middle;
 }
 .left_nav, .right_nav {
@@ -52,14 +51,14 @@ body {
     color: #32495B;
     font-weight: 600;
 }
-.left_nav > img {
+.top_nav .left_nav > img {
     filter: brightness(0.3);
-    height: 16px;
-    line-height: 60px;
+    height: 15px;
+    line-height: 70px;
     vertical-align: middle;
 }
 .left_nav span, .left_nav .barra {
-    line-height: 60px;
+    line-height: 70px;
     vertical-align: middle;
 }
 .bot_nav {
@@ -89,17 +88,27 @@ body {
 }
 .right_nav img {
     height: 16px;
-    line-height: 60px;
+    line-height: 70px;
     vertical-align: middle;
 }
 .right_nav {
     text-align: right;
 }
-.horizontal_line {
-    color: #94A2AD;
-}
-/* bot_nav CSS */
 
+/* bot_nav CSS */
+.bot_nav {
+    line-height: 70px;
+    vertical-align: middle;
+}
+.bot_nav .container .left_nav img {
+    line-height: 70px;
+    vertical-align: middle;
+}
+.bot_nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
 
 
 /********************

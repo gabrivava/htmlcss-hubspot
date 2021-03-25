@@ -18,14 +18,29 @@ body {
     background-color: aqua;
 }
 /* Utility CSS */
-
-
+.container {
+    width: 75%;
+    margin: auto;
+}
 /********************
 ******* Header ******
 ********************/
 .top_nav {
-    height: 70px;
-    background-color: blue;
+    background-color: #F4F9FD;
+}
+.bot_nav {
+    background-color: rgb(115, 255, 0);
+}
+.nav {
+    height: 60px;
+}
+#site_header {
+    color: #32495B;
+    font-weight: 400;
+}
+#site_header > .top_nav > .left_nav > img {
+    filter: brightness(0.3);
+    height: 16px;
 }
 
 

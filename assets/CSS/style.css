@@ -112,10 +112,12 @@ body {
 /* jumbotron */
 .jumbotron {
     background-image: url(../img/jumbotron.png);
-    width: 100%;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-position-y: 120px;
+    background-color: #FFF4EF;
 }
 .hero_text {
     padding-top: 7rem;
@@ -145,6 +147,11 @@ body {
     background-color: #AFEBE4;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
+}
+.main_part {
+    background-color: #F4F9FD;
+    height: 500px;
+    text-align: center;
 }
 
 

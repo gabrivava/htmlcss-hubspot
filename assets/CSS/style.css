@@ -13,47 +13,92 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 /* debug */
-#site_header {
+.dbg header {
+    height: 120px;
+    background-color: rgb(155, 224, 224);
+}
+.dbg main {
     height: 600px;
-    background-color: aqua;
+    background-color: rgb(179, 255, 0);
+}
+.dbg footer {
+    height: 600px;
+    background-color: rgb(38, 0, 255);
 }
 /* Utility CSS */
 .container {
     width: 75%;
     margin: auto;
 }
-#bigevee {
-    font-weight: 800;
-}
 /********************
 ******* Header ******
 ********************/
+
+/* top_nav CSS */
 .top_nav {
     background-color: #F4F9FD;
 }
-.bot_nav {
-    background-color: rgb(115, 255, 0);
-}
 .nav {
     height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.left_nav, .right_nav {
+    width: 50%;
+    float: left;
+    font-size: 15px;
 }
 #site_header {
     color: #32495B;
-    font-weight: 400;
+    font-weight: 600;
 }
-#site_header > .top_nav > .left_nav > img {
+.left_nav > img {
     filter: brightness(0.3);
     height: 16px;
+    line-height: 60px;
+    vertical-align: middle;
 }
-/* left_nav CSS */
-.left_nav .barra {
-    height: 20px;
-    width: 1px;
-    background-color: #32495B;
-    display: inline-block;
+.left_nav span, .left_nav .barra {
+    line-height: 60px;
+    vertical-align: middle;
+}
+.bot_nav {
+    background-color: white;
 }
 
-/* right_nav CSS */
+.left_nav .barra {
+    height: 20px;
+    width: 2px;
+    background-color: #899397;
+    display: inline-block;
+    margin: 0 20px;
+}
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn_empty {
+    color: #FE775A;
+    border: 1px solid #FE775A;
+    margin: 0 20px;
+}
+.btn_full {
+    color: white;
+    background-color: #FE775A;
+}
+.right_nav img {
+    height: 16px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.right_nav {
+    text-align: right;
+}
+.horizontal_line {
+    color: #94A2AD;
+}
+/* bot_nav CSS */
 
 
 

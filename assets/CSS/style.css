@@ -396,3 +396,22 @@ body {
 /********************
 ******* Footer ******
 ********************/
+#site_footer {
+    background-color: #32495B;
+    height: 500px;
+    color: #DADEE0;
+}
+#site_footer > .container > .elenco {
+    padding-top: 2rem;
+    line-height: 2rem;
+    float: left;
+    width: 25%;
+}
+#site_footer h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+#site_footer li {
+    font-weight: 200;
+}

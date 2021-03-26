@@ -13,21 +13,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 /* debug */
-.dbg header {
-    height: 950px;
-}
-.dbg main {
+/* .dbg header {
+    height: 900px;
+} */
+/* .dbg main {
     height: 600px;
     background-color: rgb(179, 255, 0);
 }
 .dbg footer {
     height: 600px;
     background-color: rgb(38, 0, 255);
-}
+} */
 /* Utility CSS */
 .container {
     width: 75%;
     margin: auto;
+}
+.text_grey {
+    color: #32495B;
 }
 /********************
 ******* Header ******
@@ -112,11 +115,10 @@ body {
 /* jumbotron */
 .jumbotron {
     background-image: url(../img/jumbotron.png);
-    height: 100%;
+    height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 120px;
-    background-position-y: 120px;
+    background-position-x: 150px;
     background-color: #FFF4EF;
 }
 .hero_text {
@@ -139,22 +141,79 @@ body {
     color: white;
     text-decoration: none;
 }
-/********************
-******* Main ******
-********************/
 .divisore {
-    height: 140px;
+    height: 120px;
     background-color: #AFEBE4;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-.main_part {
+
+
+/********************
+******* Main ******
+********************/
+
+#site_main {
     background-color: #F4F9FD;
-    height: 500px;
     text-align: center;
 }
+#site_main > .main_part {
+    width: 60%;
+    margin: auto;
+    padding-top: 5rem;
+}
+#site_main > .main_part > .img_cubo > img {
+    height: 300px;
+}
+#site_main > .main_part h2 {
+    font-size: 2rem;
+}
+#site_main > .main_part p {
+    margin: 3rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
 
-
+/* sezione carte CSS */
+#site_main > .container > .carta_100, #site_main > .container > .carta {
+    float: left;
+    background-color: white;
+    box-shadow: 1px 1px 6px #a3a6a8;
+    border-radius: 5px;
+}
+#site_main .carta_100 {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+#site_main .carta {
+    height: 700px;
+    width: 30%;
+}
+#site_main .carta.centrale {
+    margin: 0 5%;
+}
+#site_main > .container {
+    margin-top: 40px;
+}
+/* carta_100% larga */
+.carta_100 .left, .carta_100 .right{
+    background-color: brown;
+    height: 100%;
+    float: left;
+}
+.carta_100 > .left img {
+    height: 200px;
+}
+.carta_100 > .left {
+    width: 25%;
+}
+.carta_100 .right {
+    width: 75%;
+}
 
 /********************
 ******* Footer ******

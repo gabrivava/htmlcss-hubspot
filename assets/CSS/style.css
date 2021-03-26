@@ -13,21 +13,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     min-width: 1000px;
 }
-/* debug */
-/* .dbg header {
-    height: 880px;
-}  */
-/* .dbg main {
-    height: 600px;
-    background-color: rgb(179, 255, 0);
-}
-.dbg footer {
-    height: 600px;
-    background-color: rgb(38, 0, 255);
-} */
 /* Utility CSS */
 .container {
     width: 75%;
+    margin: auto;
+}
+.blocco {
+    width: 65%;
     margin: auto;
 }
 .text_grey {
@@ -345,7 +337,62 @@ body {
 }
 .sezione .descrione {
     font-size: 20px;
-}          
+}     
+
+                     /* Pagina 3 CSS */
+#pagina3 {
+    height: 700px;
+}
+#pagina3 .blocco .top_part section, #pagina3 .blocco .top_part .sponsors {
+    float: left;
+}
+#pagina3 .top_part > section {
+    width: 25%;
+}
+#pagina3 .top_part > .sponsors {
+    width: 60%;
+    text-align: right;
+    margin-left: 140px;
+}
+#pagina3 .top_part > section > h3 {
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+#pagina3 .blocco {
+    margin-top: 2rem;
+    height: 250px;
+}
+/* sponsors css */
+#pagina3 .sponsors > .riga img {
+    width: 20%;
+    float: left;
+    vertical-align: middle;
+    height: 100%;
+    object-fit: contain;
+    margin: 0.5rem;
+}
+#pagina3 .riga {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+#pagina3 section, #pagina3 .img_profilo {
+    float: left;
+    width: 40%;
+}
+#pagina3 h3 {
+    font-size: 30px;
+}
+#pagina3 p {
+    margin: 3rem 0;
+}
+#pagina3 .img_profilo img {
+    height: 400px;
+    position: relative;
+    left: 300px;
+}
+
+
 /********************
 ******* Footer ******
 ********************/

@@ -403,7 +403,7 @@ body {
 }
 #site_footer > .container > .elenco {
     padding-top: 2rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     float: left;
     width: 25%;
 }
@@ -414,4 +414,12 @@ body {
 }
 #site_footer li {
     font-weight: 200;
+}
+#site_footer .contact {
+    color: #32495B;
+    background-color: #DADEE0;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    margin-top: 1rem;
 }

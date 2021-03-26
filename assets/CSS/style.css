@@ -11,11 +11,12 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 1000px;
 }
 /* debug */
-/* .dbg header {
-    height: 900px;
-} */
+.dbg header {
+    height: 880px;
+} 
 /* .dbg main {
     height: 600px;
     background-color: rgb(179, 255, 0);
@@ -120,17 +121,18 @@ body {
     background-image: url(../img/jumbotron.png);
     height: 700px;
     width: 100%;
-    background-size: cover;
+    background-position: 100px 0px ;
     background-repeat: no-repeat;
     background-color: #FFF4EF;
 }
 .jumbotron::after {
     content: '';
-    height: 120px;
+    height: 90px;
     background-color: #AFEBE4;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
     width: 100%;
+    display: block;
 }
 .hero_text {
     padding-top: 5rem;
@@ -142,8 +144,7 @@ body {
 .hero_text p {
     width: 50%;
     line-height: 2rem;
-    padding: 4rem 0;
-    
+    padding: 3.8rem 0;
 }
 .hero_text a {
     padding: 25px 40px;
@@ -159,47 +160,47 @@ body {
 ******* Main ******
 ********************/
 
-#site_main {
+#pagina1 {
     background-color: #F4F9FD;
     text-align: center;
 }
-#site_main > .main_part {
+#pagina1 > .main_part {
     width: 60%;
     margin: auto;
     padding-top: 5rem;
 }
-#site_main > .main_part > .img_cubo > img {
+#pagina1 > .main_part > .img_cubo > img {
     height: 300px;
 }
-#site_main > .main_part h2 {
+#pagina1 > .main_part h2 {
     font-size: 2rem;
 }
-#site_main > .main_part p {
+#pagina1 > .main_part p {
     margin: 3rem;
     line-height: 2rem;
     font-weight: 600;
 }
 
 /* sezione carte CSS */
-#site_main > .container > .carta_100, #site_main > .container > .carta {
+#pagina1 > .container > .carta_100, #pagina1 > .container > .carta {
     float: left;
     background-color: white;
     box-shadow: 1px 1px 6px #a3a6a8;
     border-radius: 5px;
 }
-#site_main .carta_100 {
+#pagina1 .carta_100 {
     height: 400px;
     width: 100%;
     margin-bottom: 4rem;
 }
-#site_main .carta {
+#pagina1 .carta {
     height: 700px;
     width: 30%;
 }
-#site_main .carta.centrale {
+#pagina1 .carta.centrale {
     margin: 0 5%;
 }
-#site_main > .container {
+#pagina1 > .container {
     margin-top: 40px;
 }
 /* carta_100% larga */

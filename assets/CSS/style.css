@@ -398,7 +398,7 @@ body {
 ********************/
 #site_footer {
     background-color: #32495B;
-    height: 500px;
+    height: 670px;
     color: #DADEE0;
 }
 #site_footer > .container > .elenco {
@@ -406,6 +406,7 @@ body {
     line-height: 2.5rem;
     float: left;
     width: 25%;
+    margin-bottom: 3rem;
 }
 #site_footer h4 {
     font-weight: 600;
@@ -422,4 +423,34 @@ body {
     width: 75%;
     padding: 10px;
     margin-top: 1rem;
+}
+#site_footer .loghi {
+    margin-top: 1rem;;
+}
+#site_footer .loghi > .fab {
+    height: 30px;
+    width: 15%;
+}
+#site_footer .lingua {
+    width: 60%;
+    margin: auto;
+}
+#site_footer .lingua > span {
+    display: inline-block;
+    padding: 0 0.7rem;
+}
+#site_footer hr {
+    margin-top: 2rem;
+}
+#site_footer .policy, #site_footer .copyright {
+    float: left;
+    width: 50%;
+    margin-top: 3rem;
+}
+#site_footer .policy .unstyle {
+    color: white;
+    padding: 1rem;
+}
+#site_footer .policy {
+    text-align: right;
 }

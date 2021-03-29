@@ -1,4 +1,4 @@
-/* common CSS */
+/*********** common CSS ************/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +13,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     min-width: 1000px;
 }
-/* Utility CSS */
+/************** Utility CSS ************/
 .container {
     width: 75%;
     margin: auto;
@@ -66,6 +66,11 @@ body {
 .top_nav {
     background-color: #F4F9FD;
     border-bottom: 2px solid #94A2AD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 .nav {
     line-height: 70px;
@@ -89,7 +94,7 @@ body {
 }
 .bot_nav {
     background-color: white;
-    
+    margin-top: 70px;
 }
 .container > .left_nav {
     line-height: 70px;
@@ -145,10 +150,10 @@ body {
 .jumbotron {
     background-image: url(../img/jumbotron.png);
     height: 700px;
-    width: 100%;
-    background-position: 100px 0px ;
+    background-position: top right;
     background-repeat: no-repeat;
     background-color: #FFF4EF;
+    position: relative;
 }
 .jumbotron::after {
     content: '';
@@ -157,6 +162,8 @@ body {
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
     width: 100%;
+    position: absolute;
+    bottom: 0;
     display: block;
 }
 .hero_text {
@@ -453,4 +460,21 @@ body {
 }
 #site_footer .policy {
     text-align: right;
+}
+#site_footer > .help{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 60px;
+    width: 60px;
+    color: white;
+    background-color: #33475B;
+    border-radius: 50%;   
+    box-shadow: 1px 1px 5px black;
+}
+#site_footer .help i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

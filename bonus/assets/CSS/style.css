@@ -84,6 +84,7 @@ body {
 #site_header {
     color: #32495B;
     font-weight: 600;
+    position: relative;
 }
 .top_nav .left_nav i {
     vertical-align: middle;
@@ -477,4 +478,33 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+/******** Bonus CSS ********/
+
+/* drop-down */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    border: 1px solid #8ab3db;
+    z-index: 2;
+    margin: 1rem -5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px #899397;
+}
+.fas.fa-angle-down:hover .dropdown-content {
+    display: block;
+}
+.fas.fa-angle.down:hover {
+   background-color: #6b90b6;
+}
+
+.dropdown-content > ul > li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block
 }

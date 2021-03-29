@@ -508,6 +508,9 @@ body {
 }
 
 /* help Drop-down */
+.help .fas:hover .common {
+    display: block;
+}
 .help .drop-down {
     min-width: 300px;
     bottom: 5rem;

@@ -1,0 +1,480 @@
+/*********** common CSS ************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 1000px;
+}
+/************** Utility CSS ************/
+.container {
+    width: 75%;
+    margin: auto;
+}
+.blocco {
+    width: 65%;
+    margin: auto;
+}
+.text_grey {
+    color: #32495B;
+}
+.unstyle {
+    text-decoration: none;
+    list-style: none;
+}
+.bottone {
+    padding: 20px 35px;
+    border-radius: 5px;
+    background-color: #FE775A;
+    color: white;
+    text-decoration: none;
+}
+.centratura {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.padh {
+    margin: 2rem 0;
+    font-size: 25px;
+}
+.padp {
+    line-height: 1.5rem;
+}
+.spunta::before {
+    content: '\2713';
+    background-color: #FE775A;
+    border-radius: 50%;
+    color: white;
+    padding: 1px 3px;
+    font-size: 12px;
+    margin-right: 1rem;
+}
+/********************
+******* Header ******
+********************/
+
+/* top_nav CSS */
+.top_nav {
+    background-color: #F4F9FD;
+    border-bottom: 2px solid #94A2AD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav {
+    line-height: 70px;
+    vertical-align: middle;
+}
+.left_nav, .right_nav {
+    width: 50%;
+    float: left;
+    font-size: 15px;
+}
+#site_header {
+    color: #32495B;
+    font-weight: 600;
+}
+.top_nav .left_nav i {
+    vertical-align: middle;
+}
+.left_nav span, .left_nav .barra {
+    
+    vertical-align: middle;
+}
+.bot_nav {
+    background-color: white;
+    margin-top: 70px;
+}
+.container > .left_nav {
+    line-height: 70px;
+}
+.container > .left_nav > img {
+    vertical-align: middle;
+}
+.left_nav .barra {
+    height: 20px;
+    width: 2px;
+    background-color: #899397;
+    display: inline-block;
+    margin: 0 20px;
+}
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn_empty {
+    color: #FE775A;
+    border: 1px solid #FE775A;
+    margin: 0 20px;
+}
+.btn_full {
+    color: white;
+    background-color: #FE775A;
+}
+.right_nav img {
+    height: 16px;
+    line-height: 70px;
+    vertical-align: middle;
+}
+.right_nav {
+    text-align: right;
+}
+
+/* bot_nav CSS */
+.bot_nav {
+    line-height: 70px;
+    vertical-align: middle;
+}
+.bot_nav .container .left_nav {
+    line-height: 70px;
+    vertical-align: middle;
+}
+.bot_nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+/* jumbotron */
+.jumbotron {
+    background-image: url(../img/jumbotron.png);
+    height: 700px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #FFF4EF;
+    position: relative;
+}
+.jumbotron::after {
+    content: '';
+    height: 83px;
+    background-color: #AFEBE4;
+    border-top: 3px solid #33475B;
+    border-bottom: 3px solid #33475B;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+.hero_text {
+    padding-top: 5rem;
+}
+.hero_text h1 {
+    font-size: 3rem;
+    width: 50%;
+}
+.hero_text p {
+    width: 50%;
+    line-height: 2rem;
+    padding: 3.8rem 0;
+}
+
+
+
+
+/********************
+******* Main ******
+********************/
+                             /* pagina 1 */
+#pagina1 {
+    background-color: #F4F9FD;
+    text-align: center;
+    color: #394C5F;
+    height: 1680px;
+}
+#pagina1 > .main_part {
+    width: 60%;
+    margin: auto;
+    padding-top: 5rem;
+}
+#pagina1 > .main_part > .img_cubo > img {
+    height: 250px;
+}
+#pagina1 > .main_part h2 {
+    font-size: 2rem;
+}
+#pagina1 > .main_part p {
+    margin: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+/* sezione carte CSS */
+#pagina1 > .container > .carta_100, #pagina1 > .container > .carta {
+    float: left;
+    background-color: white;
+    box-shadow: 1px 1px 6px #a3a6a8;
+    border-radius: 5px;
+}
+#pagina1 .carta_100 {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+#pagina1 .carta {
+    height: 700px;
+    width: 30%;
+    padding: 35px;
+    position: relative;
+}
+#pagina1 .carta.centrale {
+    margin: 0 5%;
+}
+#pagina1 > .container {
+    margin-top: 40px;
+}
+/* carta_100% larga */
+.carta_100 .left, .carta_100 .right{
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+.carta_100 > .left img {
+    width: 70%;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+.carta_100 > .left {
+    width: 35%;
+    position: relative;
+}
+.carta_100 .right {
+    width: 65%;
+    text-align: left;
+}
+.popolar_feature::after {
+    font-weight: 600;
+    font-size: 20px;
+    content: 'POPOLAR FEATURE';
+}
+.popolar_feature {
+    margin-top: 2rem;
+    position: relative;
+}
+.popolar_feature > span {
+    background-color: #899397;
+    width: 350px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#pagina1 .carta_100 .task > li {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 2.5rem;
+}
+
+/* 3 carte */
+#pagina1 .carta > .carta_img > img {
+    height: 150px;
+}
+.linea_grigia {
+    height: 2px;
+    background-color: #899397;
+    margin: auto;
+    width: 90%;
+    margin-top: 4rem;
+}
+#pagina1 .carta ul {
+    text-align: left;
+    margin-top: 1.8rem;
+}
+#pagina1 .carta .bottone {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+                       /* pagina 2  */
+
+#pagina2 {
+    background: linear-gradient(270deg, #00BCA5 -2.65%, #00A4BC 100%);
+    height: 780px;
+    color: white;
+    text-align: center;
+}    
+#pagina2 h4 {
+    font-size: 30px;
+    padding: 3rem 0;
+}
+/* sezioni css*/
+.sezione {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 1rem;
+}
+.sezione > .logo > img {
+    height: 40px;
+}
+.sezione .numeri {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.sezione .numeri::after {
+    content: ' +';
+    font-weight: 200;
+    font-size: 30px;
+}
+.sezione:not(:last-child) {
+    border-right: 1px solid white;
+}
+.row {
+    height: 190px;
+}
+.row:first-of-type {
+    border-bottom: 1px solid white;
+    margin-top: 4rem;
+}
+.sezione .descrione {
+    font-size: 20px;
+}     
+
+                     /* Pagina 3 CSS */
+#pagina3 {
+    height: 700px;
+}
+#pagina3 .blocco .top_part section, #pagina3 .blocco .top_part .sponsors {
+    float: left;
+}
+#pagina3 .top_part > section {
+    width: 25%;
+}
+#pagina3 .top_part > .sponsors {
+    width: 60%;
+    text-align: right;
+    margin-left: 140px;
+}
+#pagina3 .top_part > section > h3 {
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+#pagina3 .blocco {
+    margin-top: 2rem;
+    height: 250px;
+}
+/* sponsors css */
+#pagina3 .sponsors > .riga img {
+    width: 20%;
+    float: left;
+    vertical-align: middle;
+    height: 100%;
+    object-fit: contain;
+    margin: 0.5rem;
+}
+#pagina3 .riga {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+#pagina3 section, #pagina3 .img_profilo {
+    float: left;
+    width: 40%;
+}
+#pagina3 h3 {
+    font-size: 30px;
+}
+#pagina3 p {
+    margin: 3rem 0;
+}
+#pagina3 .img_profilo img {
+    height: 400px;
+    position: relative;
+    left: 300px;
+}
+
+
+/********************
+******* Footer ******
+********************/
+#site_footer {
+    background-color: #32495B;
+    height: 670px;
+    color: #DADEE0;
+}
+#site_footer > .container > .elenco {
+    padding-top: 2rem;
+    line-height: 2.5rem;
+    float: left;
+    width: 25%;
+    margin-bottom: 3rem;
+}
+#site_footer h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+#site_footer li {
+    font-weight: 200;
+}
+#site_footer .contact {
+    color: #32495B;
+    background-color: #DADEE0;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    margin-top: 1rem;
+}
+#site_footer .loghi {
+    margin-top: 1rem;;
+}
+#site_footer .loghi > .fab {
+    height: 30px;
+    width: 15%;
+}
+#site_footer .lingua {
+    width: 60%;
+    margin: auto;
+}
+#site_footer .lingua > span {
+    display: inline-block;
+    padding: 0 0.7rem;
+}
+#site_footer hr {
+    margin-top: 2rem;
+}
+#site_footer .policy, #site_footer .copyright {
+    float: left;
+    width: 50%;
+    margin-top: 3rem;
+}
+#site_footer .policy .unstyle {
+    color: white;
+    padding: 1rem;
+}
+#site_footer .policy {
+    text-align: right;
+}
+#site_footer > .help{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 60px;
+    width: 60px;
+    color: white;
+    background-color: #33475B;
+    border-radius: 50%;   
+    box-shadow: 1px 1px 5px black;
+}
+#site_footer .help i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
